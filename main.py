@@ -13,7 +13,7 @@ import base64
 # ----------------------------------------------
 app = dash.Dash(__name__)
 # ----------------------------------------------
-df = pd.read_csv('NFLX.csv')
+df = pd.read_csv('data-sets/Adani Total Gas Ltd.csv')
 df["Date"]=pd.to_datetime(df.Date,format="%Y-%m-%d")
 df.index=df['Date']
 # ----------------------------------------------
